@@ -6,8 +6,8 @@ export default class EndPointAccess {
         this.theUrl = url;
     }
     
-    async getRes(){
-        const response = await axios.get(this.theUrl)
+    async getRes(params?: Record<string, any>){
+        const response = await axios.get(this.theUrl, {params, timeout: 10000})
         return response;
     }
 }

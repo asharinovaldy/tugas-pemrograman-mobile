@@ -3,9 +3,9 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <ion-icon aria-hidden="true" :icon="triangle" />
-          <ion-label>Tab 1</ion-label>
+        <ion-tab-button tab="tab1" href="/tabs/cryptocurrency">
+          <ion-icon aria-hidden="true" :icon="logoBitcoin" />
+          <ion-label>Crypto</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="tab2" href="/tabs/weather">
@@ -29,5 +29,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { cloud, ellipse, image, person, square, star, triangle } from 'ionicons/icons';
+import { cloud, ellipse, image, logoBitcoin, person, square, star, triangle } from 'ionicons/icons';
 </script>
